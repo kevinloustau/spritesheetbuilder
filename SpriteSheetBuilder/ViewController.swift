@@ -70,6 +70,7 @@ class ViewController: NSViewController {
                     self.myImages.append(NSImage(contentsOf: imageURL)!)
                     print(imageURL)
                 }
+                self.myImages.reverse()
                 self.textConfiguration(textField: self.statusTextLoadImages, status: processStatusEnum.success)
             }
         }
